@@ -1,0 +1,19 @@
+conda create --name tf_gpu tensorflow-gpu 
+conda create --name myenv  python=3.6 ipykernel
+
+1. Create a new environment in anaconda prompt
+conda create --name tf_gpu python=3.9 ipykernel
+
+2. Activate the environment
+activate tf_gpu
+
+3. Install the necessary packages
+conda install tensorflow-gpu
+pip install notebook
+
+4. Install the environment in jupyter notebook
+python -m ipykernel install --user --name=tf_gpu
+python -m ipykernel install --user --name=py36
+
+5. Deleting an environment 
+conda env remove -n ENV_NAME
